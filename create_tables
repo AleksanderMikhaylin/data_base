@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS List_Albums_Performers (
 	CONSTRAINT id_lap PRIMARY KEY (performer_id, album_id)
 );
 
-CREATE TABLE IF NOT EXISTS List_Track_Collections (
+CREATE TABLE IF NOT EXISTS List_Tracks_Collections (
 	collectoin_id INTEGER REFERENCES Collections(id),
 	track_id INTEGER REFERENCES Tracks(id),
 	CONSTRAINT id_ltc PRIMARY KEY (collectoin_id, track_id)
